@@ -5,10 +5,36 @@
     <title>Title</title>
     <script src="dragnow.js"></script>
     <style>
-        #div1{ width:100px; height:100px; background:red; position:absolute;}
-        #div2{ width:100px; height:100px; background:yellow; position:absolute; left:100px;}
-        #div3{ width:100px; height:100px; background:blue; position:absolute; left:200px;}
-        #div4{ width:100px; height:100px; background:green; position:absolute; left:300px;}
+        #div1 {
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: absolute;
+        }
+
+        #div2 {
+            width: 100px;
+            height: 100px;
+            background: yellow;
+            position: absolute;
+            left: 100px;
+        }
+
+        #div3 {
+            width: 100px;
+            height: 100px;
+            background: blue;
+            position: absolute;
+            left: 200px;
+        }
+
+        #div4 {
+            width: 100px;
+            height: 100px;
+            background: green;
+            position: absolute;
+            left: 300px;
+        }
     </style>
 </head>
 <body>
@@ -17,11 +43,11 @@
 <div id="div3"></div>
 <div id="div4"></div>
 <script>
-    window.onload=function () {
+    window.onload = function () {
         var litdrag = new drag();
-            litdrag.init({
-                id: 'div2',
-            })
+        litdrag.init({
+            id: 'div2',
+        })
     }
 
 
